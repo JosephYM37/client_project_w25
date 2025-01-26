@@ -4,141 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Pantry</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Include external stylesheet if any -->
 </head>
 <body>
 
     <header>
-            <a href = "">Skip to Main Content</a>
-            <img src="images/CPASlogo.jpg" alt="CAPS Logo">
+        <a href="#main-content" class="skip-link">Skip to Main Content</a>
         <nav>
             <ul>
-                <li><a href = "index.html">Home</a></li>
-                <li><a href = "CAPS.html">CAPS</a></li>
-                <li><a href = "CEW+.html">CEW+</a></li>
-                <li><a href = "FoodPantry.html">Food Pantry</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="CAPS.html">CAPS</a></li>
+                <li><a href="CEW+.html">CEW+</a></li>
+                <li><a href="FoodPantry.html" aria-current="page">Food Pantry</a></li>
             </ul>
         </nav>
         <h1>Food Pantry</h1>
-
     </header>
-    <main>
-        <div>
-            <p>University Health & Counseling (UHC) supports the health and well-being of the campus community.
-                 We are inspired to help students realize their potential, cope with the stresses of life, work productively, 
-                 and connect meaningfully with others.
 
-                UHC is made up of Counseling and Psychological Services (CAPS), which offers counseling services, and University 
-                Health Service (UHS), which offers medical services. This website is about CAPS. For information about UHS, 
-                please visit the UHS website.
-                
-                CAPS is committed to creating an environment based on our values of multicultural, multi-disciplinary and 
-                multi-theoretical practices that allow our diverse student body to access care, receive high quality services 
-                and take positive pathways to mental health. We are happy to offer both in-person and virtual services. 
-                
-                Our Front Desk (Michigan Union 4th Floor) is open and ready to help support you -- staff members are available 
-                throughout the day to assist you with your needs to answer questions, and get you to the right place. We can be 
-                reached by phone at: (734) 764-8312.
-                
-                CAPS has a limited number of private spaces available for students to connect with their counselor via telecounseling. 
-                Please contact the front desk for more information on those private spaces.
-                
-                Please Note: During high-demand periods, CAPS will be unable to accommodate class-related interviews and/or projects.
-                 Many students are able to find the information they need within our website and our annual reports.
-                
-                The CAPS office is unable to participate in scavenger hunts for students due to maintaining the confidentiality of our
-                 clients. However, you are welcome to direct students to the wellness zone, which has a separate entrance adjacent to CAPS. 
-                 If you have any questions, please feel free to contact us.
+    <main id="main-content">
+        <section>
+            <h1>Welcome to Maize & Blue Cupboard</h1>
+            <h2>Our Mission</h2>
+            <p>
+                To ensure members of the University of Michigan community—whether on a 
+                tight budget or physically restrained from getting to a grocery store—receive 
+                equitable access to healthy, nutritious, and nourishing food and the ability to 
+                prepare it for themselves or others.
             </p>
-            
+            <img src="images/food.jpg" alt="Grocery food on display" width="500">
+        </section>
 
-            <div class="letstalk-container">
-                <header>
-                    <h1>Let's Talk</h1>
-                </header>
-                <section class="letstalk-info">
-                  <p>
-                    “Let's Talk” is a free program that supports students starting their mental health journeys. 
-                    It provides casual meetings with counselors during specific drop-in times for initial support 
-                    and advice.
-                  </p>
-                  <figure>
-                    <img src="images/letstalk.jpg" alt="University CPS Let's Talk schedule" />
-                    <figcaption>Check out the Let's Talk schedule for drop-in times and locations.</figcaption>
-                  </figure>
-                </section>
-              </div>
+        <section class="appointment-container">
+            <h2>Make an Appointment Now</h2>
+            <p>
+                Shopping at the Maize and Blue Cupboard is by appointment only.  
+                Please <a href="https://mbc.studentlife.umich.edu/sign-up" target="_blank" rel="noopener noreferrer">make an appointment</a> by visiting our sign-up page.
+            </p>
+        </section>
 
-              <div class="IndividualPeerCounseling-container">
-                <header>
-                    <h1>Individual Peer Counseling</h1>
-                </header>
-                <section class="IndividualPeerCounseling-info">
-                  <p>
-                    Individual Peer Counseling (IPC) is designed to offer a new way to meet the needs 
-                    of students across the University of Michigan. We are here to support student mental 
-                    health and offer students a place to vent.
-                  </p>
-                  <figure>
-                    <img src="images/CAPS.jpg" alt="CAPS logo displaying hand prints" />
-                  </figure>
-                </section>
-              </div>
+        <section class="who-we-are">
+            <h2>Who We Are</h2>
+            <p>
+                College students and staff are experiencing food insecurity at alarming rates. 
+                The Maize and Blue Cupboard is here to provide an immediate and comprehensive response 
+                for the U-M community. By offering resources, educational opportunities, compassionate 
+                support, and more, we help students develop the skills to make informed decisions.
+            </p>
+            <p>
+                <a href="https://mbc.studentlife.umich.edu/faqs" target="_blank" rel="noopener noreferrer">Read our FAQs</a> to learn more about the Maize and Blue Cupboard and how you can get help.
+            </p>
+            <figure>
+                <img src="images/video.jpg" alt="A video about the pantry" width="800">
+            </figure>
+        </section>
 
-              <div class="UwillTeletherapyServices-container">
-                <header>
-                    <h1>Uwill Teletherapy Services</h1>
-                </header>
-                <section class="UwillTeletherapyServices-info">
-                  <p>
-                    Uwill is an addition to CAPS services that provides students with video, phone, chat, 
-                    and message sessions with licensed mental health professionals at no cost. This additional 
-                    counseling option offers students greater flexibility and allows CAPS to expand its service capacity.
-                  </p>
-                </section>
-              </div>
+        <section class="what-we-provide">
+            <h2>What We Provide</h2>
+            <figure>
+                <img src="images/pantry.jpg" alt="More information about the pantry" width="1400">
+            </figure>
+        </section>
 
-              <div class="FirstYearGuide-container">
-                <header>
-                    <h1>First Year Guide</h1>
-                </header>
-                <section class="FirstYearGuide-info">
-                  <p>
-                    U-M Counseling & Psychological Services (CAPS) welcomes all of our 1st year students 
-                    including those who are living on campus and those who are located remotely. We are happy 
-                    to launch a new resource created exclusively for you: “Go Blue! A New Student’s Guide to 
-                    Surviving and Thriving at U-M: Mental Health Tips.”
-                  </p>
-                  <figure>
-                    <img src="images/tt.jpg" alt="Tiktok with two students presenting the UofM CAPS logo" />
-                    <figcaption>Welcome first-years to CAPS!</figcaption>
-                  </figure>
-                </section>
-              </div>
+        <section class="news">
+            <h2>News</h2>
+            <p>
+                U-M’s Maize & Blue Cupboard (MBC), the College of Engineering, Student Life, 
+                and Ann Arbor-based Food Gatherers will host North Campus mobile food distributions 
+                to make MBC resources more accessible for North Campus residents.
+            </p>
+            <figure>
+                <img src="images/carrots.jpg" alt="A pile of carrots" width="500">
+            </figure>
+        </section>
 
-              <div class="ABriefNote-container">
-                <header>
-                    <h1>A Brief Note of Support Regarding the Violence in Israel and Gaza</h1>
-                    
-                </header>
-                <section class="ABriefNote-info">
-                  <p>
-                    CAPS extends its support to all our students who are being impacted by the current 
-                    violence in Israel and Gaza. We recognize the understandable grief, fear and anger that 
-                    many of our students may be experiencing right now, especially our students who are Israeli, 
-                    Palestinian, or have ties to or loved ones in those regions. We encourage all of you to take care 
-                    of and be compassionate with yourselves and each other;  it is in times like these, that we can come 
-                    together as a community, and in fact, we need to.
-                    Read more
-                  </p>
-                </section>
-              </div>
-        </div>
-    
+        <section class="photos">
+            <h2>Photos</h2>
+            <div class="photo-gallery">
+                <img src="images/photo1.jpg" alt="Basket of fruits" width="400">
+                <img src="images/photo2.jpg" alt="Shelves full of produce" width="400">
+                <img src="images/photo3.jpg" alt="Bags of beans" width="400">
+                <img src="images/photo4.jpg" alt="Shelves with oranges and apples" width="400">
+                <img src="images/photo5.jpg" alt="Shelves full of lightbulbs" width="400">
+            </div>
+        </section>
     </main>
-    <footer>
-        <p>CAPS | <a href="https://caps.umich.edu/">Student Life University Health & Counseling (CAPS) </a></p>
-    </footer>
-    
-</body>
 
+    <footer>
+        <p>Food Pantry | <a href="https://mbc.studentlife.umich.edu/" target="_blank" rel="noopener noreferrer">Student Life University Food Pantry</a></p>
+    </footer>
+
+</body>
 </html>
