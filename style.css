@@ -143,10 +143,16 @@ nav ul li {
     display: inline;
 }
 
-nav ul li a {
-    color: #FFCB05;
-    text-decoration: none;
-    font-size: 1.2rem;
+nav ul li a:hover {
+    color: white;
+}
+
+
+nav ul li a.active {
+    color: white;
+    font-weight: bold;
+    text-decoration: underline; 
+    transform: scale(1.1);
 }
 
 a[href=""] {
