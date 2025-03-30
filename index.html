@@ -9,24 +9,24 @@
 <body>
 
     <header>
-  <a href = "">Skip to Main Content</a>
+        <a href="">Skip to Main Content</a>
         <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
         <nav>
             <ul>
-                <li><a href = "index.html">Home</a></li>
-                <li><a href = "CAPS.html">CAPS</a></li>
-                <li><a href = "CEW+.html">CEW+</a></li>
-                <li><a href = "FoodPantry.html">Food Pantry</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="CAPS.html">CAPS</a></li>
+                <li><a href="CEW+.html">CEW+</a></li>
+                <li><a href="FoodPantry.html">Food Pantry</a></li>
             </ul>
         </nav>
         <h1>Student Success Portal</h1>
-
     </header>
+
     <main>
         <section>
             <h2>Welcome to the UM Grad Success Navigator</h2>
-            <p> Your Comprehensive Guide to Resources for Graduate School Success</p>
-            <p>This guide is set up to help you be successul inside and outside of the classroom and we have included the following resources throughout our site:</p>
+            <p>Your Comprehensive Guide to Resources for Graduate School Success</p>
+            <p>This guide is set up to help you be successful inside and outside of the classroom and we have included the following resources throughout our site:</p>
             <ol>
                 <li>Academic Resources</li>
                 <li>Physical Health</li>
@@ -35,6 +35,40 @@
                 <li>Contact</li>
             </ol>
         </section>
+
+        <!-- New Resource Filter Section -->
+        <section id="resource-filter">
+            <h2>Find Resources</h2>
+            <label for="resource-category">Filter by Category:</label>
+            <select id="resource-category">
+                <option value="all">All Resources</option>
+                <option value="physical-health">Physical Health</option>
+                <option value="mental-health">Mental Health</option>
+                <option value="academic-resources">Academic Resources</option>
+                <option value="life-outside">Life Outside Classroom</option>
+            </select>
+
+            <div id="resources-list">
+                <!-- Example resource cards -->
+                <div class="resource-card" data-category="physical-health">
+                    <h3>University Health Service (UHS)</h3>
+                    <p>Comprehensive medical care and services.</p>
+                </div>
+                <div class="resource-card" data-category="mental-health">
+                    <h3>Counseling and Psychological Services (CAPS)</h3>
+                    <p>Individual counseling and group therapy services.</p>
+                </div>
+                <div class="resource-card" data-category="academic-resources">
+                    <h3>Academic Advising</h3>
+                    <p>Personalized academic guidance and support.</p>
+                </div>
+                <div class="resource-card" data-category="life-outside">
+                    <h3>Student Organizations</h3>
+                    <p>Connect with peers through student clubs and activities.</p>
+                </div>
+            </div>
+        </section>
+
         <section>
             <h2>Physical Health</h2>
             <p>Keeping your body healthy is essential for success. The University of Michigan offers numerous resources to help you stay in top physical condition:</p>
@@ -61,26 +95,22 @@
             <p>Maintaining your mental well-being is crucial for thriving in graduate school. Here are resources to support your mental health:</p>
             <article>
                 <h3>Counseling and Psychological Services (CAPS):</h3>
-                <p> Access individual counseling, group therapy, workshops, and crisis intervention services.</p>
+                <p>Access individual counseling, group therapy, workshops, and crisis intervention services.</p>
             </article>
             <article>
                 <h3>Wellness Coaching:</h3>
-
                 <p>Work with a wellness coach to develop strategies for managing stress, time, and overall well-being.</p>
             </article>
             <article>
                 <h3>Mindfulness Resources:</h3>
-
-                <p> Participate in mindfulness and meditation sessions to cultivate a calm and focused mind.</p>
+                <p>Participate in mindfulness and meditation sessions to cultivate a calm and focused mind.</p>
             </article>
             <article>
                 <h3>Support Groups:</h3>
-
-                <p> Join peer support groups for shared experiences and collective coping strategies.</p>
+                <p>Join peer support groups for shared experiences and collective coping strategies.</p>
             </article>
         </section>
 
-        
         <section id="life-outside-classroom">
             <h2>Life Outside the Classroom</h2>
             <p>Graduate school is more than just academics. It's important to cultivate a balanced life. Here are some resources to help you enjoy life outside the classroom:</p>
@@ -92,15 +122,31 @@
                 <li><strong>Housing and Dining:</strong> Find information on on-campus housing options and dining services to ensure a comfortable living experience.</li>
             </ul>
         </section>
-        <!-- Content taken & modified from UMGPT with the prompt, "write me a webpage of intro content to help University of Michigan Master's students navigate different resources for being successful in grad school - this will include academic resources, physical health resources, mental health resources, support for life outside the classroom"
-        UMGPT. (2024). UMGPT (August 29th version) [Large language model]. -->
+
+        <!-- Content taken & modified from UMGPT with the prompt, "write me a webpage of intro content to help University of Michigan Master's students navigate different resources for being successful in grad school - this will include academic resources, physical health resources, mental health resources, support for life outside the classroom" -->
     </main>
+
     <footer>
         <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising</a></p>
         <p>&copy; <span id="year"></span> University of Michigan. All Rights Reserved.</p>
     </footer>
+
     <script>
         document.getElementById("year").textContent = new Date().getFullYear();
+
+        // JavaScript for the Resource Filter
+        document.getElementById('resource-category').addEventListener('change', function () {
+            const selectedCategory = this.value;
+            const resources = document.querySelectorAll('.resource-card');
+
+            resources.forEach(function (resource) {
+                if (selectedCategory === 'all' || resource.getAttribute('data-category') === selectedCategory) {
+                    resource.classList.remove('hidden');
+                } else {
+                    resource.classList.add('hidden');
+                }
+            });
+        });
     </script>
 
 </body>
