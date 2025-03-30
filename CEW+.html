@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>CEW+</title>
 </head>
-
 <body>
 
     <header>
@@ -106,8 +104,13 @@
     </main>
 
     <footer>
-        <p>CEW+ | <a href="https://www.cew.umich.edu/">Center for the Education of Women +</a></p>
+        <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising</a></p>
+        <p>&copy; <span id="year"></span> University of Michigan. All Rights Reserved.</p>
     </footer>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
 
 </body>
 
